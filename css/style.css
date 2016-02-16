@@ -1,0 +1,312 @@
+.carousel-inner.vertical {
+  height: 100%;
+}
+.carousel-inner.vertical > .item {
+  -webkit-transition: .5s ease-in-out top;
+  -o-transition: .5s ease-in-out top;
+  transition: .5s ease-in-out top;
+}
+@media all and (transform-3d),
+(-webkit-transform-3d) {
+  .carousel-inner.vertical > .item {
+    -webkit-transition: -webkit-transform .5s ease-in-out;
+    -o-transition: -o-transform .5s ease-in-out;
+    transition: transform .5s ease-in-out;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    perspective: 1000;
+  }
+  .carousel-inner.vertical > .item.next,
+  .carousel-inner.vertical > .item.active.right {
+    top: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+  .carousel-inner.vertical > .item.prev,
+  .carousel-inner.vertical > .item.active.left {
+    top: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  .carousel-inner.vertical > .item.next.left,
+  .carousel-inner.vertical > .item.prev.right,
+  .carousel-inner.vertical > .item.active {
+    top: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+.carousel-inner.vertical > .active {
+  top: 0;
+}
+.carousel-inner.vertical > .next,
+.carousel-inner.vertical > .prev {
+  top: 0;
+  height: 100%;
+  width: auto;
+}
+.carousel-inner.vertical > .next {
+  left: 0;
+  top: 100%;
+}
+.carousel-inner.vertical > .prev {
+  left: 0;
+  top: -100%
+}
+.carousel-inner.vertical > .next.left,
+.carousel-inner.vertical > .prev.right {
+  top: 0;
+}
+.carousel-inner.vertical > .active.left {
+  left: 0;
+  top: -100%;
+}
+.carousel-inner.vertical > .active.right {
+  left: 0;
+  top: 100%;
+}
+
+
+
+-----------------------------------------------------------------------------------------------------
+
+.carrufeo {
+  display: inline-block;
+  width: 85%;
+}
+
+.fondo {
+  background-image: url(../img/background.jpg);
+  height: 100vh;
+  width: 85%;
+}
+
+.fondo2 {
+  background-image: url(../img/background_2.jpg);
+  bottom: -5vh;
+  height: 100vh;
+  width: 85%;
+}
+
+.hack {
+  position: absolute;
+  right: 7vw;
+  bottom: 23vh;
+  width: 31%;
+}
+
+
+.students {
+  position: absolute;
+  width: 15%;
+  right: 12vw;
+  bottom: 9vh;
+  display: inline-block;
+}
+
+.students5 {
+  position: absolute;
+  width: 19%;
+  right: 12vw;
+  bottom: 9vh;
+}
+
+.students6 {
+  position: absolute;
+  width: 20%;
+  right: 12vw;
+  bottom: 9vh;
+}
+
+.students7 {
+  position: absolute;
+  width: 40%;
+  right: 7vw;
+  bottom: 9vh;
+}
+
+.students3 {
+  position: absolute;
+  width: 13.5%;
+  right: 12vw;
+  bottom: 9vh;
+}
+
+.students2 {
+  position: absolute;
+  width: 25%;
+  right: 9vw;
+  bottom: 9vh;
+}
+
+.students4 {
+  position: absolute;
+  width: 23%;
+  right: 9vw;
+  bottom: 9vh;
+}
+
+.panel {
+  opacity: 1;
+  position: fixed;
+  width: 15%;
+  background: black;
+  bottom: -3vh;
+  right: 0;
+  top: 0;
+  display: inline-block;
+  z-index: 1;
+}
+
+.arrowt {
+  transform: rotate(90deg);
+  margin-top: -93vh;
+  margin-left: 35.5vw;
+}
+
+.arrowb {
+  transform: rotate(90deg);
+  margin-bottom: -69vh;
+  margin-right: 49vw;
+}
+
+.texto {
+  position: absolute;
+  display: inline-block;
+  background-color: blue;
+  border: solid black 2px;
+  color: white;
+  width: 37%;
+  height: 65vh;
+  top: 10vh;
+  left: 3vw;
+  opacity: 0.7;
+  border-radius: 2%;
+  z-index: 1;
+}
+
+.texto2 {
+  position: absolute;
+  display: inline-block;
+  background-color: white;
+  border: solid gray 2px;
+  color: black;
+  width: 37%;
+  height: 65vh;
+  top: 10vh;
+  left: 3vw;
+  opacity: 0.7;
+  border-radius: 2%;
+  z-index: 1;
+}
+
+.titulo {
+  font-size: 2.5em;
+  margin-top: 5vh;
+  margin-left: 1vw;
+}
+
+.subtitulo {
+  font-size: 1.5em;
+  color: gray;
+  margin-left: 1vw;
+}
+
+.concepto {
+  font-size: 1.15em;
+  margin-left: 1vw;
+  margin-right: 1vw;
+}
+
+.iconos {
+  display: inline-block;
+  margin-top: 3vh;
+  margin-left: 2.4vw;
+}
+
+.iconos2 {
+  display: inline-block;
+  margin-top: 3vh;
+  margin-left: 2.4vw;
+  background-color: gray;
+}
+
+.nombres {
+  position: absolute;
+  display: inline-block;
+  right: 3vw;
+  bottom: 25vh;
+  background-color: blue;
+  border: solid black 5px;
+  color: white;
+  height: 9vh;
+  width: 43%;
+  font-size: 3em;
+  opacity: 0.7;
+  z-index: 1;
+}
+
+.nombres2 {
+  position: absolute;
+  right: 3vw;
+  bottom: 25vh;
+  background-color: white;
+  border: solid gray 5px;
+  color: black;
+  height: 9vh;
+  width: 43%;
+  font-size: 3em;
+  opacity: 0.7;
+  z-index: 1;
+}
+
+.nombre {
+  margin-top: -1vh;
+  margin-left: 9vw;
+}
+
+.nombre2 {
+  margin-top: -1vh;
+  margin-left: 7vw;
+}
+
+.nombre3 {
+  margin-top: -1vh;
+  margin-left: 5vw;
+}
+
+.carousel-indicators {
+  position: absolute;
+  top: 10vh;
+  left: 11vw;
+  display: block;
+}
+
+.carousel-indicators li {
+    display: block;
+    font-size: 1em;
+    width: 19px;
+    height: 19px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    background-color: black;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    color: white;
+}
+
+.carousel-indicators li p {
+    display: block;
+    margin-top: -0.1vh;
+    margin-left: 37.2vw;
+    position: absolute;
+}
+
+.carousel-indicators .active {
+    width: 19px;
+    height: 19px;
+    background-color: white;
+    color: black;
+    margin-bottom: 10px;
+}
